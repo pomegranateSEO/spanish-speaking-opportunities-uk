@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spanish-Speaking Opportunities — Entry-Level UK Roles</title>
+  <meta name="description" content="Curated list of entry-level Spanish-speaking job opportunities in the UK. Recruitment agencies, job boards, and companies actively hiring bilingual candidates.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Entry-Level · Remote & London · No Sponsorship Needed</div>
+      <h1>Spanish-Speaking<br>Opportunities in the UK</h1>
+      <p class="hero-sub">Curated sources for bilingual entry-level roles — agencies, job boards, and companies actively hiring Spanish speakers.</p>
+      <div class="stats-bar" id="stats-bar">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+    <div class="hero-shape" aria-hidden="true"></div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="filters-section">
+    <div class="container">
+      <div class="filter-row">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="recruitment_agency">Agencies</button>
+          <button class="filter-btn" data-filter="job_board">Job Boards</button>
+          <button class="filter-btn" data-filter="company">Companies</button>
+          <button class="filter-btn" data-filter="va_platform">VA Platforms</button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-btn" data-location="all">All Locations</button>
+          <button class="filter-btn" data-location="remote">Remote</button>
+          <button class="filter-btn" data-location="hybrid">Hybrid</button>
+          <button class="filter-btn" data-location="office">London / Office</button>
+        </div>
+        <div class="filter-group">
+          <button class="filter-btn action-filter" data-action="apply_now">Apply Now</button>
+          <button class="filter-btn action-filter" data-action="register_cv">Register CV</button>
+          <button class="filter-btn action-filter" data-action="monitor">Monitor</button>
+          <button class="filter-btn action-filter" data-action="check_board">Check Board</button>
+        </div>
+      </div>
+      <div class="search-row">
+        <div class="search-wrapper">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search by role, company, or industry...">
+        </div>
+        <div class="result-count" id="result-count"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards Grid -->
+  <section class="cards-section">
+    <div class="container">
+      <div class="cards-grid" id="cards-grid">
+        <!-- Populated by JS -->
+      </div>
+      <div class="empty-state" id="empty-state" style="display:none;">
+        <p>No roles match your current filters.</p>
+        <button class="btn-secondary" onclick="resetFilters()">Clear all filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-note">
+          <p>All roles are entry-level and exclude interest-bearing financial products. Verify roles are still live before applying.</p>
+          <p class="footer-updated">Last updated: <span id="last-updated"></span></p>
+        </div>
+        <div class="footer-sources">
+          <p>Sources: Agency websites, job boards, company career pages, press releases, and research reports.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

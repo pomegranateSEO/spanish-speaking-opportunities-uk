@@ -1,0 +1,13 @@
+{
+  "name": "spanish-speaking-opportunities-uk",
+  "version": "1.0.0",
+  "description": "Curated entry-level Spanish-speaking job opportunities in the UK",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site — no build step needed'"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
