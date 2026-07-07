@@ -427,6 +427,10 @@ a:hover {
   flex-shrink: 0;
 }
 
+.meta-tag-unverified {
+  color: #B45309;
+}
+
 .card-evidence {
   font-size: 0.8125rem;
   color: var(--slate);
